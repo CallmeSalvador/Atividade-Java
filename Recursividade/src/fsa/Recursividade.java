@@ -6,14 +6,15 @@ public class Recursividade {
         int[] array = new int[5];
         int indice = array.length;
         array[0] = 1;
-        array[1] = 1;
-        array[2] = 1;
-        array[3] = 1;
-        array[4] = 1;
+        array[1] = 2;
+        array[2] = 3;
+        array[3] = 4;
+        array[4] = 5;
 
         System.out.println("O fatorial de 5 é: "+ factorial(5));
         System.out.println("O nono número em fibonacci é: "+ fibonacci(9));
         System.out.println("A potência de 2 elevado a 4 é: "+ potencia(2,4));
+        System.out.println("soma= " + somaArray(array, 5));
     }
 
     public static int factorial(int n) {
@@ -40,6 +41,14 @@ public class Recursividade {
             return b * potencia(b, e - 1);
         }
     }
-
-    public static void somarArray(int[] a, int b){}
+    
+    public static int somaArray(int[] array, int tamanho) {
+        // Caso base: se o tamanho do array for 0, a soma é 0.
+        if (tamanho == 0) {
+            return 0;
+        } else {
+            // Chamada recursiva: soma o elemento atual com a soma dos elementos restantes.
+            return array[tamanho - 1] + somaArray(array, tamanho - 1);
+        }
+    }
 }
