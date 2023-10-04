@@ -1,5 +1,7 @@
 # Atividades de Java
-Atividades de java que eu fiz na faculdade.
+ _Resolução de atividades de JAVA da faculdade e cursos por fora_
 
-|-----|-----|------|-----|
-|Atividade |data | matéria| professor|
+Exercícios |  Matéria/Curso  |  Professor(a)  | Data
+------| -----| ------| -------
+PilhaA| Estrutura de Dados | Renato Carioca | 00/09/2023
+
